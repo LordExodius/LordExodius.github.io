@@ -44,6 +44,8 @@ body
     background-color: #fafafa;
     width: 250px;
     height: 390px;
+
+    animation-name: slide-up 5s infinite;
 }
 
 h1.card-image
@@ -69,4 +71,10 @@ h1.card-image.writing
 .card-image.notion
 {
     background-image: url("res/notion.png");
+}
+
+@keyframes slide-up
+{
+    from {top: 200px}
+	to {top: 0px}
 }
