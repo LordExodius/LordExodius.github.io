@@ -45,13 +45,33 @@ body
 .card
 {
     margin: 20px 20px;
-    padding-top: 10px;
+    padding: 10px;
     background-color: #fafafa;
     width: 250px;
-    height: 350px;
+    height: 380px;
 }
 
-.card header
+h1.card-image
 {
-    text-align: center;
+    width: 230px;
+    height: 230px;
+    margin: 10px auto;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+h1.card-image.writing 
+{
+    background-image: url("res/writingBlog.png");
+}
+
+.card-image.spotify 
+{
+    background-image: url("res/spofy.png");
+}
+
+.card-image.notion
+{
+    background-image: url("res/notion.png");
 }
