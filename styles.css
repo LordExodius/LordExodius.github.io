@@ -30,6 +30,7 @@ body
 {
     width: 800px;
     max-width: 80vw;
+    margin: auto;
 }
 
 .container
