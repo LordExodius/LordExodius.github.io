@@ -26,6 +26,11 @@ body
     margin: 5% 5% 10%;
 }
 
+#logo-anim
+{
+    width: 80vw;
+}
+
 .container
 {
     align-items: center;
