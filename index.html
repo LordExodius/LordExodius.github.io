@@ -9,7 +9,7 @@
     </head>
 
     <body>
-        <div id="logo"></div>
+        <div id="logo-anim"></div>
 
         <p>Hi hi, hello! Welcome to my site, although there's not much here yet :')</p>
         <p>If you're interested, here's a link to my <a href="https://bookexodus.wordpress.com/">Writing Blog</a>! 📝</p>
@@ -18,4 +18,9 @@
         <p>Anyways, I'm super<sup>supersupersuper</sup> happy you made it here, so thanks for checking in!</p>
         <p>Enjoy your time here,</p>
     </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/vivus@0.4.5/dist/vivus.min.js"></script>
+    <script>
+        new Vivus("logo-anim", {duration: 1000, file: "res/logo.svg", start: "autostart"})
+    </script>
 </html>
