@@ -28,12 +28,14 @@ body
 
 #logo-anim
 {
-    width: 80vw;
+    width: 800px;
+    max-width: 80vw;
 }
 
 .container
 {
-    align-items: center;
-    justify-content: space-around;
+    display: flex;
+    align-items: top;
+    justify-content: center;
     flex-direction: row;
 }
