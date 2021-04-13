@@ -18,14 +18,6 @@ body
     color: black;
 }
 
-#logo
-{
-    background-image: url("res/logo.svg ");
-    background-size: 100% 100%;
-	height: 80vh;
-    margin: 5% 5% 10%;
-}
-
 #logo-anim
 {
     width: 800px;
@@ -33,10 +25,24 @@ body
     margin: auto;
 }
 
-.container
+#deck
 {
+    margin: auto 10% auto;
     display: flex;
+    flex-wrap: wrap;
     align-items: top;
     justify-content: center;
-    flex-direction: row;
+}
+
+.card
+{
+    margin: 10% 20px;
+    background-color: #fafafa;
+    width: 250px;
+    height: 350px;
+}
+
+.card header
+{
+    text-align: center;
 }
