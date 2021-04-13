@@ -21,8 +21,16 @@ body
 #logo-anim
 {
     width: 800px;
+    height: 432px;
     max-width: 80vw;
+    max-height: calc(80vw * (27/50));
     margin: auto;
+}
+
+#logo-anim img
+{
+    width: 100%;
+    height: 100%;
 }
 
 #deck
@@ -37,6 +45,7 @@ body
 .card
 {
     margin: 20px 20px;
+    padding-top: 10px;
     background-color: #fafafa;
     width: 250px;
     height: 350px;
