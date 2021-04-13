@@ -45,7 +45,8 @@ body
     width: 250px;
     height: 390px;
 
-    animation-name: slide-up 5s infinite;
+    animation-name: slide-up;
+    animation-duration: 1s;
 }
 
 h1.card-image
@@ -61,20 +62,26 @@ h1.card-image
 h1.card-image.writing 
 {
     background-image: url("res/writingBlog.png");
+    animation-name: slide-up;
+    animation-duration: 1s;
 }
 
 .card-image.spotify 
 {
     background-image: url("res/spofy.png");
+    animation-name: slide-up;
+    animation-duration: 2s;
 }
 
 .card-image.notion
 {
     background-image: url("res/notion.png");
+    animation-name: slide-up;
+    animation-duration: 3s;
 }
 
 @keyframes slide-up
 {
-    from {top: 200px}
-	to {top: 0px}
+    from {transform: translateY(200px);}
+	to {transform: translateY(0px);}
 }
