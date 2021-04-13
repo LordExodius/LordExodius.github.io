@@ -27,7 +27,7 @@ body
 
 #deck
 {
-    margin: auto 10% auto;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: top;
