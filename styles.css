@@ -65,8 +65,7 @@ div.card-image.writing
 
 .writing
 {
-    animation-name: slide-up;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
 }
 
 div.card-image.spotify 
@@ -76,8 +75,7 @@ div.card-image.spotify
 
 .spotify
 {
-    animation-name: slide-up;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
 div.card-image.notion
@@ -87,8 +85,7 @@ div.card-image.notion
 
 .notion
 {
-    animation-name: slide-up;
-    animation-duration: 3s;
+    animation-duration: 1.5s;
 }
 
 @keyframes slide-up
