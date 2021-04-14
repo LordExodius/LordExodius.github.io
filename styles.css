@@ -3,7 +3,7 @@ body
     background-color: #fff9f0;
     background-position: center;
     background-attachment: fixed;
-    margin: 5% auto 20%;
+    margin: 5% auto;
 }
 
 *
@@ -15,8 +15,8 @@ body
 
 #logo-anim
 {
-    width: 800px;
-    height: 432px;
+    width: 700px;
+    height: 378px;
     max-width: 80vw;
     max-height: calc(80vw * (27/50));
     margin: auto;
@@ -46,10 +46,9 @@ body
     height: 390px;
 
     animation-name: slide-up;
-    animation-duration: 1s;
 }
 
-h1.card-image
+div.card-image
 {
     width: 230px;
     height: 230px;
@@ -59,23 +58,35 @@ h1.card-image
     background-repeat: no-repeat;
 }
 
-h1.card-image.writing 
+div.card-image.writing 
 {
     background-image: url("res/writingBlog.png");
+}
+
+.writing
+{
     animation-name: slide-up;
     animation-duration: 1s;
 }
 
-.card-image.spotify 
+div.card-image.spotify 
 {
     background-image: url("res/spofy.png");
+}
+
+.spotify
+{
     animation-name: slide-up;
     animation-duration: 2s;
 }
 
-.card-image.notion
+div.card-image.notion
 {
     background-image: url("res/notion.png");
+}
+
+.notion
+{
     animation-name: slide-up;
     animation-duration: 3s;
 }
