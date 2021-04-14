@@ -20,6 +20,9 @@ body
     max-width: 80vw;
     max-height: calc(80vw * (27/50));
     margin: auto;
+
+    animation-name: fade-in;
+    animation-duration: 2s;
 }
 
 #logo-anim img
@@ -45,7 +48,7 @@ body
     width: 250px;
     height: 390px;
 
-    animation-name: slide-up;
+    animation-name: slide-up, fade-in;
 }
 
 div.card-image
@@ -65,7 +68,7 @@ div.card-image.writing
 
 .writing
 {
-    animation-duration: 0.5s;
+    animation-duration: 0.7s;
 }
 
 div.card-image.spotify 
@@ -75,7 +78,7 @@ div.card-image.spotify
 
 .spotify
 {
-    animation-duration: 1s;
+    animation-duration: 1.4s;
 }
 
 div.card-image.notion
@@ -85,11 +88,17 @@ div.card-image.notion
 
 .notion
 {
-    animation-duration: 1.5s;
+    animation-duration: 2.1s;
 }
 
 @keyframes slide-up
 {
     from {transform: translateY(200px);}
 	to {transform: translateY(0px);}
+}
+
+@keyframes fade-in 
+{
+    from {opacity: 0%;}
+    to {opacity: 100%;}
 }
