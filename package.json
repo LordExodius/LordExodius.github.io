@@ -1,0 +1,22 @@
+{
+  "name": "lordexodius.github.io",
+  "version": "1.0.0",
+  "description": "my website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LordExodius/LordExodius.github.io.git"
+  },
+  "author": "LordExodius",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LordExodius/LordExodius.github.io/issues"
+  },
+  "homepage": "https://github.com/LordExodius/LordExodius.github.io#readme",
+  "dependencies": {
+    "zdog": "^1.1.2"
+  }
+}
