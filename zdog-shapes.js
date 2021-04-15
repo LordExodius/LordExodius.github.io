@@ -28,7 +28,7 @@ new Zdog.Cylinder({
 // spotify top arc front
 new Zdog.Shape({
     addTo: sphere,
-    translate: {z: 4},
+    translate: {z: 5},
     path: [
         {x: -8, y: -4}, // start
         {arc: [
@@ -43,7 +43,7 @@ new Zdog.Shape({
 // spotify middle arc front
 new Zdog.Shape({
     addTo: sphere,
-    translate: {z: 4},
+    translate: {z: 5},
     path: [
         {x: -7, y: 0}, // start
         {arc: [
@@ -58,7 +58,7 @@ new Zdog.Shape({
 // spotify bottom arc front
 new Zdog.Shape({
     addTo: sphere,
-    translate: {z: 4},
+    translate: {z: 5},
     path: [
         {x: -6, y: 4}, // start
         {arc: [
@@ -76,7 +76,7 @@ new Zdog.Shape({
 // spotify top arc back
 new Zdog.Shape({
     addTo: sphere,
-    translate: {z: -4},
+    translate: {z: -5},
     path: [
         {x: -8, y: -4}, // start
         {arc: [
@@ -91,7 +91,7 @@ new Zdog.Shape({
 // spotify middle arc back
 new Zdog.Shape({
     addTo: sphere,
-    translate: {z: -4},
+    translate: {z: -5},
     path: [
         {x: -7, y: 0}, // start
         {arc: [
@@ -106,7 +106,7 @@ new Zdog.Shape({
 // spotify bottom arc front
 new Zdog.Shape({
     addTo: sphere,
-    translate: {z: -4},
+    translate: {z: -5},
     path: [
         {x: -6, y: 4}, // start
         {arc: [
