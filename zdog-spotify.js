@@ -25,10 +25,14 @@ new Zdog.Cylinder({
 // ARCS ON FRONT
 //--------------------------------------------------------------------
 
-// spotify top arc front
-new Zdog.Shape({
+var frontArcs = new Zdog.Group({
     addTo: spotify,
     translate: {z: 5},
+})
+
+// spotify top arc front
+new Zdog.Shape({
+    addTo: frontArcs,
     path: [
         {x: -8, y: -4}, // start
         {arc: [
@@ -42,8 +46,7 @@ new Zdog.Shape({
 
 // spotify middle arc front
 new Zdog.Shape({
-    addTo: spotify,
-    translate: {z: 5},
+    addTo: frontArcs,
     path: [
         {x: -7, y: 0}, // start
         {arc: [
@@ -57,8 +60,7 @@ new Zdog.Shape({
 
 // spotify bottom arc front
 new Zdog.Shape({
-    addTo: spotify,
-    translate: {z: 5},
+    addTo: frontArcs,
     path: [
         {x: -6, y: 4}, // start
         {arc: [
@@ -73,10 +75,14 @@ new Zdog.Shape({
 // ARCS ON BACK
 //--------------------------------------------------------------------
 
-// spotify top arc back
-new Zdog.Shape({
+var backArcs = new Zdog.Group({
     addTo: spotify,
     translate: {z: -5},
+})
+
+// spotify top arc back
+new Zdog.Shape({
+    addTo: backArcs,
     path: [
         {x: -8, y: -4}, // start
         {arc: [
@@ -90,8 +96,7 @@ new Zdog.Shape({
 
 // spotify middle arc back
 new Zdog.Shape({
-    addTo: spotify,
-    translate: {z: -5},
+    addTo: backArcs,
     path: [
         {x: -7, y: 0}, // start
         {arc: [
@@ -105,8 +110,7 @@ new Zdog.Shape({
 
 // spotify bottom arc front
 new Zdog.Shape({
-    addTo: spotify,
-    translate: {z: -5},
+    addTo: backArcs,
     path: [
         {x: -6, y: 4}, // start
         {arc: [
