@@ -1,5 +1,5 @@
 // create instance of zdog illustration
-let sphere = new Zdog.Illustration({
+let spotify = new Zdog.Illustration({
     element: "#spotify-svg",
     dragRotate: true,
     onDragStart() 
@@ -15,7 +15,7 @@ let sphere = new Zdog.Illustration({
 
 // add circle
 new Zdog.Cylinder({
-    addTo: sphere,
+    addTo: spotify,
     diameter: 24,
     length: 5,
     color: "#2FE971",
@@ -27,7 +27,7 @@ new Zdog.Cylinder({
 
 // spotify top arc front
 new Zdog.Shape({
-    addTo: sphere,
+    addTo: spotify,
     translate: {z: 5},
     path: [
         {x: -8, y: -4}, // start
@@ -42,7 +42,7 @@ new Zdog.Shape({
 
 // spotify middle arc front
 new Zdog.Shape({
-    addTo: sphere,
+    addTo: spotify,
     translate: {z: 5},
     path: [
         {x: -7, y: 0}, // start
@@ -57,7 +57,7 @@ new Zdog.Shape({
 
 // spotify bottom arc front
 new Zdog.Shape({
-    addTo: sphere,
+    addTo: spotify,
     translate: {z: 5},
     path: [
         {x: -6, y: 4}, // start
@@ -75,7 +75,7 @@ new Zdog.Shape({
 
 // spotify top arc back
 new Zdog.Shape({
-    addTo: sphere,
+    addTo: spotify,
     translate: {z: -5},
     path: [
         {x: -8, y: -4}, // start
@@ -90,7 +90,7 @@ new Zdog.Shape({
 
 // spotify middle arc back
 new Zdog.Shape({
-    addTo: sphere,
+    addTo: spotify,
     translate: {z: -5},
     path: [
         {x: -7, y: 0}, // start
@@ -105,7 +105,7 @@ new Zdog.Shape({
 
 // spotify bottom arc front
 new Zdog.Shape({
-    addTo: sphere,
+    addTo: spotify,
     translate: {z: -5},
     path: [
         {x: -6, y: 4}, // start
@@ -119,17 +119,3 @@ new Zdog.Shape({
 })
 
 //--------------------------------------------------------------------
-
-sphere.updateRenderGraph()
-
-//animation functionaily
-function animate()
-{
-    //rotate circle every fram
-    sphere.rotate.y += 0.005;
-    sphere.updateRenderGraph();
-    //animate next frame
-    requestAnimationFrame(animate)
-}
-
-animate()

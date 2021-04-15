@@ -47,6 +47,13 @@ body
     height: 230px;
 }
 
+#notion-svg
+{
+    background-color: #eeeeee;
+    width: 230px;
+    height: 230px;
+}
+
 .card
 {
     margin: 20px 20px;
