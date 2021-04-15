@@ -1,5 +1,6 @@
 spotify.updateRenderGraph()
 notion.updateRenderGraph()
+pen.updateRenderGraph()
 
 var rotationCycle = 0;
 
@@ -30,10 +31,11 @@ function animate()
         rotationCycle = 0;
     }
 
+    pen.rotate.y += 0.005;
     //notion.rotate.y += 0.005;
     spotify.updateRenderGraph();
     notion.updateRenderGraph();
-
+    pen.updateRenderGraph();
 
     //animate next frame
     requestAnimationFrame(animate)

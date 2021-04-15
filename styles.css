@@ -54,6 +54,13 @@ body
     height: 230px;
 }
 
+#pen-svg
+{
+    background-color: #eeeeee;
+    width: 230px;
+    height: 230px;
+}
+
 .card
 {
     margin: 20px 20px;
