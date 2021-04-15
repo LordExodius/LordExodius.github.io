@@ -61,6 +61,12 @@ body
     height: 230px;
 }
 
+#me-svg
+{
+    background-color: #ffffff;
+    width: 400px;
+    height: 400px;
+}
 .card
 {
     margin: 20px 20px;
