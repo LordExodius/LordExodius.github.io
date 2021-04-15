@@ -1,6 +1,6 @@
 let notion = new Zdog.Illustration({
     element: "#notion-svg",
-    rotate: {x: -0.3, y: -0.5},
+    rotate: {x: -0.3, y: -0.3},
     dragRotate: true,
     onDragStart() 
     {
