@@ -1,4 +1,4 @@
-# Awwscar.ca
+# awwscar.ca
 
 ### A personal website, by Oscar Yu
 
