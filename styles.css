@@ -76,6 +76,13 @@ body
     height: 390px;
 
     animation-name: slide-up, fade-in;
+    transition: 0.2s;
+}
+
+.card:hover
+{
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 10px #ccc;
 }
 
 div.card-image
