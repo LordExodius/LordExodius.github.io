@@ -1,6 +1,6 @@
 # <a href="https://awwscar.ca">awwscar.ca</a>
 
-### A personal website, by Oscar Yu
+### A personal website, by me :D
 
 Just a fun little side project to teach myself HTML, CSS, and JS.
 
