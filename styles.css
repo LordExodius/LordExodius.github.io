@@ -37,7 +37,6 @@ body
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    align-items: top;
     justify-content: center;
 }
 
