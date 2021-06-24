@@ -29,6 +29,14 @@ footer
     color: black;
 }
 
+#error
+{
+    margin: auto;
+    justify-content: center;
+    width: 300px;
+    max-width: 80vw;
+}
+
 #logo-anim
 {
     width: 700px;
@@ -75,13 +83,6 @@ footer
     background-color: #eeeeee;
     width: 230px;
     height: 230px;
-}
-
-#me-svg
-{
-    background-color: #ffffff;
-    width: 400px;
-    height: 400px;
 }
 
 .card
