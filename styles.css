@@ -1,6 +1,13 @@
+*
+{
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    color: black;
+}
+
 body
 {
-    background-color: #fff9f0;
+    background-color: #fcf8f3;
     background-position: center;
     background-attachment: fixed;
     margin: 2% auto;
@@ -25,13 +32,6 @@ footer
 img
 {
     max-width: 100%;
-}
-
-*
-{
-    text-align: center;
-    font-family: "Trebuchet MS", sans-serif;
-    color: black;
 }
 
 #error
@@ -68,27 +68,6 @@ img
     justify-content: center;
 }
 
-#spotify-svg
-{
-    background-color: #eeeeee;
-    width: 230px;
-    height: 230px;
-}
-
-#notion-svg
-{
-    background-color: #eeeeee;
-    width: 230px;
-    height: 230px;
-}
-
-#pen-svg
-{
-    background-color: #eeeeee;
-    width: 230px;
-    height: 230px;
-}
-
 .card
 {
     margin: 20px 20px;
@@ -118,29 +97,14 @@ div.card-image
     background-repeat: no-repeat;
 }
 
-div.card-image.writing 
-{
-    background-image: url("res/writingBlog.png");
-}
-
 .writing
 {
     animation-duration: 0.7s;
 }
 
-div.card-image.spotify 
-{
-    background-image: url("res/spofy.png");
-}
-
 .spotify
 {
     animation-duration: 1.4s;
-}
-
-div.card-image.notion
-{
-    background-image: url("res/notion.png");
 }
 
 .notion
