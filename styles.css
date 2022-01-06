@@ -1,13 +1,13 @@
 *
 {
     text-align: center;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto Mono", monospace;
     color: black;
 }
 
 body
 {
-    background-color: #fcf8f3;
+    background-color: #FFFEFC;
     background-position: center;
     background-attachment: fixed;
     margin: 2% auto;
@@ -74,7 +74,7 @@ img
     padding: 10px;
     background-color: #fafafa;
     width: 250px;
-    height: 390px;
+    height: 360px;
 
     animation-name: slide-up, fade-in;
     transition: 0.2s;
@@ -110,6 +110,16 @@ div.card-image
 .notion
 {
     animation-duration: 2.1s;
+}
+
+h1
+{
+    font-size: medium;
+}
+
+h2, h3
+{
+    font-size: small;
 }
 
 @keyframes slide-up
