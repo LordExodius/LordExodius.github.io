@@ -68,6 +68,16 @@ img
     justify-content: center;
 }
 
+#playground
+{
+    width: 700px;
+    max-width: 80vw;
+    margin: auto;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .card
 {
     margin: 20px 20px;
