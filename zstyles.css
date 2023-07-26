@@ -19,6 +19,13 @@
     height: 230px;
 }
 
+#camera-svg
+{
+    background-color: #eeeeee;
+    width: 230px;
+    height: 230px;
+}
+
 #playground-svg
 {
     background-color: #FFFEFC;;

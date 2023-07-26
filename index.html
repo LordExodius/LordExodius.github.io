@@ -1,92 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Oscar's Playground</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="zstyles.css">
-        <link rel="icon" href="res/icon.svg" sizes="any" type="image/svg">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DQCW70FCR2"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-DQCW70FCR2');
-        </script>
-    </head>
 
-    <body>
-        <div id="logo-anim">
-            <noscript>
-                <img src="res/logo.svg" alt="Oscar's Playground"></img>
-            </noscript>
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <title>Oscar's Playground</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="zstyles.css">
+    <link rel="icon" href="res/icon.svg" sizes="any" type="image/svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <div id="card">
-            <h3>Check out my other projects <a href="https://github.com/LordExodius" target="_blank">here</a>!</h3>
-        </div>
-
-        <div id="deck">
-            <div class="card writing">
-                <div class="card-image">
-                    <svg id="pen-svg" width="230" height="230"></svg>
-                </div>
-                <h2>Writing Blog</h2>
-                <p>If you're interested, here's a link to my writing blog! 📝</p>
-                <a href="https://bookexodus.wordpress.com/" target="_blank">Writing Blog</a>
-            </div>
-
-            <div class="card spotify">
-                <div class="card-image">
-                    <svg id="spotify-svg" width="230" height="230"></svg>
-                </div>
-                <h2>Spotify Playlists</h2>
-                <p>I've got some pretty cool playlists, check them out! 🎵</p>
-                <a href="https://open.spotify.com/user/lordblanc?si=QRXtd24-QLOCZIMT6uF9Yg/" target="_blank">My Spotify</a>
-            </div>
-
-            <div class="card notion">
-                <div class="card-image">
-                    <svg id="notion-svg" width="230" height="230"></svg>
-                </div>
-                <h2>Notion</h2>
-                <p>A list of food places I like or want to visit :D 🍜</p>
-                <a href="https://www.notion.so/foodlist/oscar-s-food-list-f19588bf1a924be1b7889b74fa855a90" target="_blank">Food List</a>
-            </div>
-        </div>
-
-        <p>Hi hi, hello! Welcome to my site, although there's not much here yet :')</p>
-        <p>Anyways, I'm super<sup>super<sup>super<sup>super</sup></sup></sup> happy you made it here, so thanks for checking in!</p>
-        <p>Enjoy your time here :D</p>
-
-        <br>
-
-        <div id="playground">
-            <svg id="playground-svg" width="230" height="230"></svg>
-        </div>
-
-    </body>
-
-    <footer>
-        © 2022 Oscar Yu | <a href="https://github.com/LordExodius" target="_blank">Github</a>
-    </footer>
-
-    <script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
-    <script src="zdog/zdog-pen.js"></script>
-    <script src="zdog/zdog-spotify.js"></script>
-    <script src="zdog/zdog-notion.js"></script>
-    <script src="zdog/zdog-playground.js"></script>
-    <script src="zdog/zdog-master.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/vivus@0.4.5/dist/vivus.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DQCW70FCR2"></script>
     <script>
-        new Vivus("logo-anim", {type: "oneByOne", duration: 250, file: "res/logo.svg", start: "autostart"})
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-DQCW70FCR2');
     </script>
+</head>
+
+<body>
+    <div id="logo-anim">
+        <noscript>
+            <img src="res/logo.svg" alt="Oscar's Playground"></img>
+        </noscript>
+    </div>
+
+    <div id="card">
+        <h3>Check out my other projects <a href="https://github.com/LordExodius" target="_blank">here</a>!</h3>
+    </div>
+
+    <div id="deck">
+        <div class="card camera">
+            <div class="card-image">
+                <svg id="camera-svg" width="230" height="230"></svg>
+            </div>
+            <h2>Photography</h2>
+            <p>Some of my favourite photos I've taken 📷</p>
+            <a href="https://extremelycorporate.ca/~oscar/photobook/?" target="_blank">Photobook</a>
+        </div>
+
+        <div class="card writing">
+            <div class="card-image">
+                <svg id="pen-svg" width="230" height="230"></svg>
+            </div>
+            <h2>Writing Blog</h2>
+            <p>If you're interested, here's a link to my writing blog! 📝</p>
+            <a href="https://bookexodus.wordpress.com/" target="_blank">Writing Blog</a>
+        </div>
+
+        <div class="card spotify">
+            <div class="card-image">
+                <svg id="spotify-svg" width="230" height="230"></svg>
+            </div>
+            <h2>Spotify Playlists</h2>
+            <p>I've got some pretty cool playlists, check them out! 🎵</p>
+            <a href="https://open.spotify.com/user/lordblanc?si=QRXtd24-QLOCZIMT6uF9Yg/" target="_blank">My Spotify</a>
+        </div>
+
+        <div class="card notion">
+            <div class="card-image">
+                <svg id="notion-svg" width="230" height="230"></svg>
+            </div>
+            <h2>Notion</h2>
+            <p>A list of food places I like or want to visit :D 🍜</p>
+            <a href="https://www.notion.so/foodlist/oscar-s-food-list-f19588bf1a924be1b7889b74fa855a90"
+                target="_blank">Food List</a>
+        </div>
+
+    </div>
+
+    <p>Hi hi, hello! I'm Oscar - welcome to my site C:</p>
+    <p>I'm super<sup>super<sup>super<sup>super</sup></sup></sup> happy you made it here, so thanks for checking in!</p>
+    <p>Enjoy your time here :D</p>
+
+    <br>
+
+    <div id="playground">
+        <svg id="playground-svg" width="230" height="230"></svg>
+    </div>
+
+</body>
+
+<footer>
+    © 2023 Oscar Yu | <a href="https://github.com/LordExodius" target="_blank">Github</a>
+</footer>
+
+<script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
+<script src="zdog/zdog-pen.js"></script>
+<script src="zdog/zdog-spotify.js"></script>
+<script src="zdog/zdog-notion.js"></script>
+<script src="zdog/zdog-camera.js"></script>
+<script src="zdog/zdog-playground.js"></script>
+<script src="zdog/zdog-master.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/vivus@0.4.5/dist/vivus.min.js"></script>
+<script>
+    new Vivus("logo-anim", { type: "oneByOne", duration: 250, file: "res/logo.svg", start: "autostart" })
+</script>
+
 </html>

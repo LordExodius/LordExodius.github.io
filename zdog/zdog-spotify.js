@@ -2,14 +2,8 @@
 let spotify = new Zdog.Illustration({
     element: "#spotify-svg",
     dragRotate: true,
-    onDragStart() 
-    {
-        isSpinning = false
-    },
-    onDragEnd() 
-    {
-        isSpinning = true
-    },
+    onDragStart() { isSpinning = false },
+    onDragEnd() { isSpinning = true },
     zoom: 5
 })
 
@@ -27,18 +21,20 @@ new Zdog.Cylinder({
 
 var frontArcs = new Zdog.Group({
     addTo: spotify,
-    translate: {z: 5},
+    translate: { z: 5 },
 })
 
 // spotify top arc front
 new Zdog.Shape({
     addTo: frontArcs,
     path: [
-        {x: -8, y: -4}, // start
-        {arc: [
-            {x: 0, y: -9}, // corner
-            {x: 8, y: -5}, // end
-        ]},
+        { x: -8, y: -4 }, // start
+        {
+            arc: [
+                { x: 0, y: -9 }, // corner
+                { x: 8, y: -5 }, // end
+            ]
+        },
     ],
     closed: false,
     stroke: 2
@@ -48,11 +44,13 @@ new Zdog.Shape({
 new Zdog.Shape({
     addTo: frontArcs,
     path: [
-        {x: -7, y: 0}, // start
-        {arc: [
-            {x: 0, y: -5}, // corner
-            {x: 7, y: -1}, // end
-        ]},
+        { x: -7, y: 0 }, // start
+        {
+            arc: [
+                { x: 0, y: -5 }, // corner
+                { x: 7, y: -1 }, // end
+            ]
+        },
     ],
     closed: false,
     stroke: 2
@@ -62,11 +60,13 @@ new Zdog.Shape({
 new Zdog.Shape({
     addTo: frontArcs,
     path: [
-        {x: -6, y: 4}, // start
-        {arc: [
-            {x: 0, y: -1}, // corner
-            {x: 6, y: 3}, // end
-        ]},
+        { x: -6, y: 4 }, // start
+        {
+            arc: [
+                { x: 0, y: -1 }, // corner
+                { x: 6, y: 3 }, // end
+            ]
+        },
     ],
     closed: false,
     stroke: 2
@@ -77,18 +77,20 @@ new Zdog.Shape({
 
 var backArcs = new Zdog.Group({
     addTo: spotify,
-    translate: {z: -5},
+    translate: { z: -5 },
 })
 
 // spotify top arc back
 new Zdog.Shape({
     addTo: backArcs,
     path: [
-        {x: -8, y: -4}, // start
-        {arc: [
-            {x: 0, y: -9}, // corner
-            {x: 8, y: -5}, // end
-        ]},
+        { x: -8, y: -4 }, // start
+        {
+            arc: [
+                { x: 0, y: -9 }, // corner
+                { x: 8, y: -5 }, // end
+            ]
+        },
     ],
     closed: false,
     stroke: 2
@@ -98,11 +100,13 @@ new Zdog.Shape({
 new Zdog.Shape({
     addTo: backArcs,
     path: [
-        {x: -7, y: 0}, // start
-        {arc: [
-            {x: 0, y: -5}, // corner
-            {x: 7, y: -1}, // end
-        ]},
+        { x: -7, y: 0 }, // start
+        {
+            arc: [
+                { x: 0, y: -5 }, // corner
+                { x: 7, y: -1 }, // end
+            ]
+        },
     ],
     closed: false,
     stroke: 2
@@ -112,11 +116,13 @@ new Zdog.Shape({
 new Zdog.Shape({
     addTo: backArcs,
     path: [
-        {x: -6, y: 4}, // start
-        {arc: [
-            {x: 0, y: -1}, // corner
-            {x: 6, y: 3}, // end
-        ]},
+        { x: -6, y: 4 }, // start
+        {
+            arc: [
+                { x: 0, y: -1 }, // corner
+                { x: 6, y: 3 }, // end
+            ]
+        },
     ],
     closed: false,
     stroke: 2

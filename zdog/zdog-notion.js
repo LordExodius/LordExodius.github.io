@@ -1,15 +1,9 @@
 let notion = new Zdog.Illustration({
     element: "#notion-svg",
-    rotate: {x: -0.3, y: -0.3},
+    rotate: { x: -0.3, y: -0.3 },
     dragRotate: true,
-    onDragStart() 
-    {
-        isSpinning = false
-    },
-    onDragEnd() 
-    {
-        isSpinning = true
-    },
+    onDragStart() { isSpinning = false },
+    onDragEnd() { isSpinning = true },
     zoom: 5
 })
 
@@ -28,7 +22,7 @@ new Zdog.Box({
 // front face outline
 new Zdog.RoundedRect({
     addTo: notion,
-    translate: {z: 10},
+    translate: { z: 10 },
     width: 20,
     height: 20,
     stroke: 2,
@@ -39,7 +33,7 @@ new Zdog.RoundedRect({
 // back face outline
 new Zdog.RoundedRect({
     addTo: notion,
-    translate: {z: -10},
+    translate: { z: -10 },
     width: 20,
     height: 20,
     stroke: 2,
@@ -50,47 +44,47 @@ new Zdog.RoundedRect({
 // top face outline
 new Zdog.RoundedRect({
     addTo: notion,
-    translate: {y: -10},
+    translate: { y: -10 },
     width: 20,
     height: 20,
     stroke: 2,
     color: "#000",
-    rotate: {x: Math.PI/2},
+    rotate: { x: Math.PI / 2 },
 })
 
 // left face outline
 new Zdog.RoundedRect({
     addTo: notion,
-    translate: {x: -10},
+    translate: { x: -10 },
     width: 20,
     height: 20,
     stroke: 2,
     color: "#000",
-    rotate: {y: Math.PI/2},
+    rotate: { y: Math.PI / 2 },
 })
 
 // right face outline
 new Zdog.RoundedRect({
     addTo: notion,
-    translate: {x: 10},
+    translate: { x: 10 },
     width: 20,
     height: 20,
     stroke: 2,
     color: "#000",
-    rotate: {y: Math.PI/2},
+    rotate: { y: Math.PI / 2 },
 })
 
 var nGroup = new Zdog.Group({
     addTo: notion,
-    translate: {z: 11},
+    translate: { z: 11 },
 })
 
 // N line 1
 new Zdog.Shape({
     addTo: nGroup,
     path: [
-        {x: -5, y: -5}, // start
-        {x: -5, y: 5},
+        { x: -5, y: -5 }, // start
+        { x: -5, y: 5 },
     ],
     stroke: 2,
     color: "#000",
@@ -100,8 +94,8 @@ new Zdog.Shape({
 new Zdog.Shape({
     addTo: nGroup,
     path: [
-        {x: -5, y: -5}, // start
-        {x: 5, y: 5},
+        { x: -5, y: -5 }, // start
+        { x: 5, y: 5 },
     ],
     stroke: 2,
     color: "#000",
@@ -111,8 +105,8 @@ new Zdog.Shape({
 new Zdog.Shape({
     addTo: nGroup,
     path: [
-        {x: 5, y: -5}, // start
-        {x: 5, y: 5}, // end 
+        { x: 5, y: -5 }, // start
+        { x: 5, y: 5 }, // end 
     ],
     stroke: 2,
     color: "#000",
