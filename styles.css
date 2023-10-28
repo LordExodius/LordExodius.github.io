@@ -88,6 +88,15 @@ details summary {
     max-width: 80vw;
 }
 
+#small-logo {
+    width: 150px;
+    height: 80px;
+    margin: auto;
+
+    animation-name: fade-in;
+    animation-duration: 2s;
+}
+
 #logo-anim {
     width: 700px;
     height: 378px;
