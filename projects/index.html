@@ -5,10 +5,87 @@
         <title>Oscar's Playground</title>
         <link rel="stylesheet" href="../styles.css">
         <link rel="icon" href="../res/icon.svg" sizes="any" type="image/svg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv = "refresh" content = "0; url = https://extremelycorporate.ca/~oscar/projects/"/>
     </head>
 
     <body style="background-color: #fefefe;">
-        <p>If this page does not refresh automatically, click <a href="https://extremelycorporate.ca/~oscar/projects/">here</a></p>
+        <h1 class="alt-font uline lightweight">Experiences</h1>
+        <h2 class="secondary alt-font lightweight">Some stuff I've done :D</h2>
+        <!-- Experience Cards! -->
+        <div class="large-card">
+            <h3 class="lightweight">Summer 2023 - Software Developer Intern @ CIBC</h3>
+            <p><b>ECRM Integration Team</b> 📊</p>
+            <hr>
+            <p>
+                During my summer @ CIBC, I worked on the ECRM integration team. We were responsible for developing and 
+                maintaining the infrastructure that allowed business teams to integrate their Salesforce applications 
+                and data with the bank's core systems.
+            </p>
+            <p class="uline">Summary</p>
+            <ul>
+                <li>Re-designed and implemented department-wide data archival system, reducing archival size by
+                    80% and saving $3000+/month. It's also scalable now!</li>
+                <li>Optimized global config management using Azure Databricks to consolidate 30+ configuration files
+                    into a single source of truth, eliminating version mismatches and reducing deployment time
+                    by up to 90%.</li>
+                <li>Helped reduce redundant Salesforce API calls by modularizing boilerplate code.</li>
+            </ul>
+
+            <details>
+                <summary class="uline">Click here to read the full story!</summary>
+                <hr>
+                <p class="uline">Part 1.</p>
+                <p>
+                    I worked on several projects, the first of which was a complete overhaul of the data archival system 
+                    used by every team in the ECRM department. You know how sometimes, you get introduced to a certain 
+                    codebase and you just know that it's going to be a pain to work with? Well, that was this project. 
+                    It was evidently a very ramshackle system that someone had put together and decided: 
+                    <em>"we'll fix that later"</em>.
+                </p>
+                <p><b>Obviously, they never did. Thanks.</b></p>
+                <p>To give a quick rundown of what the existing archival pipeline looked like, I drew you a picture. Look!</p>
+                <div class="photoframe">
+                    <img src="../res/old_archival_pipeline.png" alt="Old Archival Pipeline">
+                </div>
+                <p>
+                    I'm kidding. Mostly? Basically, our "archive" was just another container in ADLS (Azure Data Lake Storage)
+                    that we would dump data into. Other than the fact that it was a separate container, there was nothing
+                    different about it from the "live" container. The "archive" was quite sizable, and it was also using ADLS'
+                    hot tier (the most expensive one), usually meant for data that's frequently accessed. This sucked, because 
+                    we were archiving data that was supposed to be kept for 7 years, and honestly, would probably never be 
+                    accessed again.
+                </p>
+                <p>
+                    Tier-ing aside, there was also no rhyme or reason to how the archival process was done for each team.
+                    Looking at the Azure Data Factory pipelines for each team, you could see that each team had their own
+                    way of doing things. Some teams used standardized ISO dates, some teams used a custom date format. Some
+                    teams would label each file they generated, others would use a generic name and put it in a folder with
+                    the date.
+                </p>
+                <p>
+                    Honestly, I had a headache just looking at it. But someone's gotta pay back the techical debt, right? 
+                    Might as well be me.
+                </p>
+            </details>
+        </div>
+        <br>
+        <div class="large-card">
+            <h3 class="lightweight">Summer 2022 - Risk Analyst Intern @ BMO</h3>
+            <p><b>Counterparty Credit Risk</b> 🕵️</p>
+            <hr>
+            <p>
+                While I was @ BMO, I worked on the Counterparty Credit Risk team. We were responsible for monitoring the bank's risk
+                exposure to its counterparties, and ensuring that the bank was in compliance with the regulations set by
+                the Office of the Superintendent of Financial Institutions (OSFI).
+            </p>
+            <p class="uline">Summary</p>
+            <ul>
+                <li></li>
+            </ul>
+        </div>
     </body>
