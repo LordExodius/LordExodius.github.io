@@ -55,7 +55,7 @@ details summary {
     font-size: small;
 }
 
-/** COLOURS */
+/** Colors and formatting */
 .primary {
     color: #262626;
 }
@@ -80,6 +80,10 @@ details summary {
 
 .lightweight {
     font-weight: 300;
+}
+
+.stacked {
+    margin: 5px;
 }
 
 #error {
