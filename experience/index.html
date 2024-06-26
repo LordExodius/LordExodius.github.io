@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oscar's Playground</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/res/icon.svg" sizes="any" type="image/svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body style="background-color: #fefefe;">
+    <a href="/">
+    <div id="small-logo">
+        <noscript>
+            <img src="/res/logo.svg" alt="Oscar's Playground"></img>
+        </noscript>
+    </div>
+    </a>
+    <h1 class="alt-font uline lightweight">Experiences</h1>
+    <h2 class="secondary alt-font lightweight">Some stuff I've done :D</h2>
+    <!-- Experience Cards! -->
+    <div class="large-card">
+        <h3 class="lightweight">Summer 2024 - Software Engineering Intern @ Mark43</h3>
+        <p><b>RMS Product Engineering Team 📄</b></p>
+        <hr>
+        <p>
+            I'm currently working @ Mark43 as a software engineering intern for the RMS product 
+            engineering team.
+        </p>
+        <p>
+            My primary tech stack here involves <b>java, typescript, react</b>, and <b>mysql</b>.
+        </p>
+        <p class="uline">In Progress</p>
+        <p>
+            My current project involves redesigning some of our databases and the code that
+            allows our tenants to export crime and incident reports for state and federal use!
+            Some states have decided they want to try some interesting things, so it's my job to figure out how
+            to enable our clients to comply with those regulations.
+        </p>
+    </div>
+    <br>
+    <div class="large-card">
+        <h3 class="lightweight">Summer 2023 - Software Developer Intern @ CIBC</h3>
+        <p><b>eCRM Integration Team 📊</b></p>
+        <hr>
+        <p>
+            During my summer @ CIBC, I worked on the eCRM integration team. We were responsible for developing and 
+            maintaining the infrastructure that allowed business teams to integrate their Salesforce applications 
+            and data with the bank's core systems.
+        </p>
+        <p class="uline">Summary</p>
+        <ul>
+            <li>Architected and implemented a department-wide data archival system, reducing the live archive size by
+                80% and saving more than $3000/month.</li>
+            <li>Optimized global config management using Azure Databricks to consolidate 30+ configuration files
+                into a single source of truth, eliminating version mismatches and reducing pipeline maintenance/development
+                times by up to 90%.</li>
+            <li>Helped reduce Salesforce API calls by modularizing some boilerplate code, enabling
+                business teams to make queries for the specific things they needed.</li>
+        </ul>
+
+        <details>
+            <summary class="uline">Click here to read the full story!</summary>
+            <hr>
+            <p class="uline">Part 1.</p>
+            <p>
+                I worked on several projects, the first of which was a complete overhaul of the data archival system 
+                used by every team in the ECRM department. You know how sometimes, you get introduced to a certain 
+                codebase and you just know that it's going to be a pain to work with? Well, that was this project. 
+                It was evidently a very ramshackle system that someone had put together and decided: 
+                <em>"we'll fix that later"</em>.
+            </p>
+            <p><b>Obviously, they never did. Thanks.</b></p>
+            <p>To give a quick rundown of what the existing archival pipeline looked like, I drew you a picture. Look!</p>
+            <div class="photoframe">
+                <img src="/res/old_archival_pipeline.png" alt="Old Archival Pipeline">
+            </div>
+            <p>
+                I'm kidding. Mostly? Basically, our "archive" was just another container in ADLS (Azure Data Lake Storage)
+                that we would dump data into. Other than the fact that it was a separate container, there was nothing
+                different about it from the "live" container. The "archive" was quite sizable, and it was also using ADLS'
+                hot tier (the most expensive one), usually meant for data that's frequently accessed. This sucked, because 
+                we were archiving data that was supposed to be kept for 7 years, and honestly, would probably never be 
+                accessed again.
+            </p>
+            <p>
+                Tier-ing aside, there was also no rhyme or reason to how the archival process was done for each team.
+                Looking at the Azure Data Factory pipelines for each team, you could see that each team had their own
+                way of doing things. Some teams used standardized ISO dates, some teams used a custom date format. Some
+                teams would label each file they generated, others would use a generic name and put it in a folder with
+                the date.
+            </p>
+            <p>
+                Honestly, I had a headache just looking at it. But someone's gotta pay back the techical debt, right? 
+                Might as well be me.
+            </p>
+        </details>
+    </div>
+    <br>
+    <div class="large-card">
+        <h3 class="lightweight">Summer 2022 - Risk Analyst Intern @ BMO</h3>
+        <p><b>Counterparty Credit Risk</b> 🕵️</p>
+        <hr>
+        <p>
+            While I was @ BMO, I worked on the Counterparty Credit Risk team. We were responsible for monitoring the bank's risk
+            exposure to its counterparties, and ensuring that the bank was in compliance with the regulations set by
+            the Office of the Superintendent of Financial Institutions (OSFI).
+        </p>
+        <p class="uline">Summary</p>
+        <ul>
+            <li>Led team migration to PowerBI from manual Excel report generation, saving up to 40 hours per monthly
+                reporting cycle.
+            </li>
+            <li>Created dashboards using PowerBI and Python to enhance counterparty risk tracking for 50+ analysts
+                in the market risk department.
+            </li>
+            <li>Automated daily FX report generation and email delivery using Python and Chron scripts, reducing 
+                data latency.
+            </li>
+            <li>Optimized data transfer between database systems and internal reporting tools using Jupyter Notebook
+                to automate complex repetitive SQL queries, decreasing time spent on data retrieval by up to 50%.
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        © 2023 Oscar Yu | <a href="https://github.com/LordExodius" target="_blank">Github</a>
+    </footer>    
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/vivus@0.4.5/dist/vivus.min.js"></script>
+<script>
+    new Vivus("small-logo", { type: "oneByOne", duration: 250, file: "/res/logo.svg", start: "autostart" })
+</script>
+
+</html>
