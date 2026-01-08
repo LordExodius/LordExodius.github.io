@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Oscar's Playground</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/res/icon.svg" sizes="any" type="image/svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <a href="/">
+        <div id="med-logo" class="med-logo">
+            <noscript>
+                <img src="/res/logo.svg" alt="Oscar's Playground"></img>
+            </noscript>
+        </div>
+    </a>
+    <div class="large-card">
+        <h1 class="alt-font uline">Oscar's Blog</h1>
+        <h2 class="ternary alt-font lightweight">Ramblings of the deranged</h2>
+        <p>Hello, welcome to my blog. Not too much here, just thought it'd be a nice place to keep some photos and thoughts.</p>
+        <p>Stay tuned for updates! <span class="secondary">(when I figure out where to host images)</span></p>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/vivus@0.4.5/dist/vivus.min.js"></script>
+<script>
+    new Vivus("med-logo", { type: "oneByOne", duration: 250, file: "/res/logo.svg", start: "autostart" })
+</script>
+
+</html>

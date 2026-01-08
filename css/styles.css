@@ -1,230 +1,270 @@
+:root {
+  --primary-spacing: 0.25rem;
+  --primary-font-color: #262626;
+  --secondary-font-color: #cfcfcf;
+  --ternary-font-color: #707070;
+}
+
 * {
-    font-family: "Roboto Mono", monospace;
-    color: #262626;
+  font-family: "Roboto Mono", monospace;
+  color: #262626;
 }
 
 body {
-    text-align: center;
-    background-color: #FFFEFC;
-    background-position: center;
-    background-attachment: fixed;
-    margin: 2% auto;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+  text-align: center;
+  background-color: #fefefe;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 2% auto;
+  padding: calc(var(--primary-spacing)*4)
 }
 
 footer {
-    font-size: smaller;
-    padding: 10px;
-    text-align: left;
-    display: inline-block;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background-color: #f3eae0;
-    width: 100%;
+  font-size: smaller;
+  padding: 10px;
+  text-align: left;
+  display: inline-block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #f3eae0;
+  width: 100%;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
+}
+
+table {
+  margin: auto;
+}
+
+th, td {
+  font-size: small;
+  padding: calc(var(--primary-spacing) * 1) calc(var(--primary-spacing) * 3);
+  &[colspan] {
+    text-align: center;
+  }
 }
 
 h2 {
-    font-size: medium;
+  font-size: medium;
 }
 
-p, ul, li {
-    font-size: small;
+p,
+ul,
+li {
+  font-size: small;
 }
 
 li {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 ul {
-    list-style-type: "- ";
+  list-style-type: "- ";
 }
 
 a {
-    color:#535353;
+  color: var();
+  &:hover {
+    color: var(--ternary-font-color);
+  }
+  &:visited {
+    color: purple;
+  }
 }
 
 details summary {
-    cursor: pointer;
-    font-size: small;
+  cursor: pointer;
+  font-size: small;
 }
 
 /** Colors and formatting */
 .primary {
-    color: #262626;
+  color: var(--primary-font-color);
 }
 
 .secondary {
-    color: #cfcfcf;
+  color: var(--secondary-font-color);
+}
+
+.ternary {
+  color: var(--ternary-font-color);
 }
 
 .uline {
-    text-decoration: underline;
-    text-decoration-color: rgb(255, 153, 0);
-    text-decoration-thickness: 2px;
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 153, 0);
+  text-decoration-thickness: 2px;
 }
 
 .alt-font {
-    font-family: "Inconsolata", monospace;
+  font-family: "Inconsolata", monospace;
 }
 
 .alt-font-2 {
-    font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .lightweight {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .stacked {
-    margin: 5px;
+  margin: 5px;
 }
 
 .widget {
-    border-radius: 10px;
-    box-shadow: 1px 2px 5px #999;
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px #999;
 }
 
 #error {
-    margin: auto;
-    justify-content: center;
-    max-width: 80vw;
+  margin: auto;
+  justify-content: center;
+  max-width: 80vw;
 }
 
 #small-logo {
-    width: 150px;
-    height: 80px;
-    margin: auto;
+  width: 150px;
+  height: 80px;
+  margin: auto;
 
-    animation-name: fade-in;
-    animation-duration: 2s;
+  animation-name: fade-in;
+  animation-duration: 2s;
+}
+
+.med-logo {
+  width: 300px;
+  height: 160px;
+  margin: auto;
+  margin-bottom: 2%;
+
+  animation-name: fade-in;
+  animation-duration: 2s;
 }
 
 #logo-anim {
-    width: 700px;
-    height: 378px;
-    max-width: 80vw;
-    max-height: calc(80vw * (27/50));
-    margin: auto;
-    margin-bottom: 2%;
+  width: 700px;
+  height: 378px;
+  max-width: 80vw;
+  max-height: calc(80vw * (27 / 50));
+  margin: auto;
+  margin-bottom: 2%;
 
-    animation-name: fade-in;
-    animation-duration: 2s;
+  animation-name: fade-in;
+  animation-duration: 2s;
 }
 
 #logo-anim img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 #deck {
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #playground {
-    width: 700px;
-    max-width: 80vw;
-    margin: auto;
+  width: 700px;
+  max-width: 80vw;
+  margin: auto;
 
-    background-size: contain;
-    background-repeat: no-repeat;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /** Object Templates */
 
 .large-card {
-    max-width: 80%;
-    width: 700px;
-    margin: auto;
-    padding: 20px;
-    text-align: left;
-    background-color: #fafafa;
-    box-shadow: 2px 2px 8px #999;
+  max-width: 80%;
+  width: 700px;
+  margin: auto;
+  padding: 20px;
+  text-align: left;
+  background-color: #fafafa;
+  box-shadow: 2px 2px 8px #999;
+  margin-block-end: 2rem;
 }
 
 .photoframe {
-    margin:auto;
-    width: 80%;
-    height: 100%;
+  margin: auto;
+  width: 80%;
+  height: 100%;
 
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    box-shadow: 0px 5px 10px #999;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 5px 10px #999;
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 .card {
-    margin: 20px 20px;
-    padding: 10px;
-    background-color: #fafafa;
-    width: 250px;
-    height: 360px;
+  margin: 20px 20px;
+  padding: 10px;
+  background-color: #fafafa;
+  width: 250px;
+  height: 360px;
 
-    animation-name: slide-up, fade-in;
-    transition: 0.2s;
+  animation-name: slide-up, fade-in;
+  transition: 0.2s;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    transform: scale(1.02);
-    box-shadow: 0px 5px 10px #999;
+  transform: translateY(-5px);
+  transform: scale(1.02);
+  box-shadow: 0px 5px 10px #999;
 }
 
 div.card-image {
-    width: 230px;
-    height: 230px;
-    margin: 10px auto;
+  width: 230px;
+  height: 230px;
+  margin: 10px auto;
 
-    background-size: contain;
-    background-repeat: no-repeat;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /* Loading Animations */
 .writing {
-    animation-duration: 1.4s;
+  animation-duration: 1.4s;
 }
 
 .spotify {
-    animation-duration: 2.1s;
+  animation-duration: 2.1s;
 }
 
 .notion {
-    animation-duration: 2.8s;
+  animation-duration: 2.8s;
 }
 
 .camera {
-    animation-duration: .7s;
+  animation-duration: 0.7s;
 }
 
 @keyframes slide-up {
-    from {
-        transform: translateY(200px);
-    }
+  from {
+    transform: translateY(200px);
+  }
 
-    to {
-        transform: translateY(0px);
-    }
+  to {
+    transform: translateY(0px);
+  }
 }
 
 @keyframes fade-in {
-    from {
-        opacity: 0%;
-    }
+  from {
+    opacity: 0%;
+  }
 
-    to {
-        opacity: 100%;
-    }
+  to {
+    opacity: 100%;
+  }
 }
